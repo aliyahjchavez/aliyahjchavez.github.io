@@ -3384,7 +3384,7 @@ input, select, textarea {
 	  background-color: #cccccc;
 	  background-position: center;
 	  background-repeat: no-repeat;
-	  background-size: contain;
+	  background-size: cover;
 	  position: relative;
 	}
 
@@ -3495,6 +3495,8 @@ input, select, textarea {
 		#intro h1 {
 			font-size: 5rem;
 			line-height: 1;
+			border-top: 5px solid #20B2AA;
+			border-bottom: 5px solid #20B2AA;
 		}
 
 		#intro p {
