@@ -4048,7 +4048,7 @@ input, select, textarea {
 
 			}
 
-		#main > .resume {
+		#main > .module {
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
@@ -4066,7 +4066,7 @@ input, select, textarea {
 			padding: 0;
 		}
 
-			#main > .resume > * {
+			#main > .module > * {
 				-moz-flex-shrink: 1;
 				-webkit-flex-shrink: 1;
 				-ms-flex-shrink: 1;
@@ -4077,17 +4077,20 @@ input, select, textarea {
 				flex-grow: 0;
 			}
 
-			#main > .resume > * {
+			#main > .module > * {
 				width: 100%;
 			}
 
-			#main > .resume > * {
-				padding: 4rem;
+			#main > .module > * {
+				padding-left: 4rem;
+				padding-right: 4rem;
+				padding-top: 2rem;
+				padding-bottom: 1rem;
 				width: 100%;
 			}
 
 
-			#main > .resume > article {
+			#main > .module > article {
 				border-color: #eeeeee;
 				border-left-width: 2px;
 				border-style: solid;
@@ -4095,29 +4098,29 @@ input, select, textarea {
 				text-align: center;
 			}
 
-				#main > .resume > article > :last-child {
+				#main > .module > article > :last-child {
 					margin-bottom: 0;
 				}
 
-				#main > .resume > article:nth-child(5n - 1) {
+				#main > .module > article:nth-child(5n - 1) {
 					border-left-width: 0;
 				}
 
-/*				#main > .resume > article:nth-child(-n + 2) {
+/*				#main > .module > article:nth-child(-n + 2) {
 					border-top-width: 0;
 				}*/
 
-				/*#main > .resume > article > h4 {
+				/*#main > .module > article > h4 {
 					font-size: 4rem;
 				}*/
 
 			@media screen and (max-width: 980px) {
 
-				#main > .resume > * {
+				#main > .module > * {
 					width: 100%;
 				}
 
-				#main > .resume > * {
+				#main > .module > * {
 					padding: 2.5rem;
 					width: 100%;
 				}
@@ -4126,32 +4129,32 @@ input, select, textarea {
 
 			@media screen and (max-width: 736px) {
 
-				#main > .resume > * {
+				#main > .module > * {
 					width: 100%;
 				}
 
-				#main > .resume > * {
+				#main > .module > * {
 					padding: 2rem;
 					width: 100%;
 				}
 
-				#main > .resume > article:nth-child(2n - 1) {
+				#main > .module > article:nth-child(2n - 1) {
 					border-left-width: 2px;
 				}
 
-				#main > .resume > article:nth-child(-n + 2) {
+				#main > .module > article:nth-child(-n + 2) {
 					border-top-width: 2px;
 				}
 
-				#main > .resume > article:nth-child(n) {
+				#main > .module > article:nth-child(n) {
 					border-left-width: 0;
 				}
 
-				#main > .resume > article:nth-child(-n + 1) {
+				#main > .module > article:nth-child(-n + 1) {
 					border-top-width: 0;
 				}
 
-				#main > .resume > article .image {
+				#main > .module > article .image {
 					max-width: 25rem;
 					margin-left: auto;
 					margin-right: auto;
@@ -4173,6 +4176,23 @@ input, select, textarea {
 				width: 100%;
 			}
 
+		}
+
+		/* Scrollup Stuff */
+		.come-in {
+			transform: translateY(150px);
+			animation: come-in 0.8s ease forwards;
+		}
+		.come-in:nth-child(odd) {
+			animation-duration: 0.6s;
+		}
+		.already-visible {
+			transform: translateY(0);
+			animation: none;
+		}
+
+		@keyframes come-in {
+			to { transform: translateY(0); }
 		}
 
 /* Footer */
