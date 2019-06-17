@@ -2697,6 +2697,22 @@ input, select, textarea {
 				width: 100%;
 			}
 
+		.image.foot {
+			display: block;
+			margin: 2rem 0;
+			width: 50%;
+			margin-left: auto;
+  			margin-right: auto;
+		}
+
+			.image.foot:first-child {
+				margin-top: 0;
+			}
+
+			.image.foot img {
+				width: 75%;
+			}
+
 		@media screen and (max-width: 736px) {
 
 			.image.fit {
@@ -4233,6 +4249,10 @@ input, select, textarea {
 
 		#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
 			color: #717981;
+		}
+
+		#footer h2 {
+			text-align: center;
 		}
 
 		#footer blockquote {
