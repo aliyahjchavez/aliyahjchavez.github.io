@@ -2659,7 +2659,7 @@ input, select, textarea {
 
 			.image.left img, .image.right img {
 				width: 100%;
-				max-height: 12rem;
+				max-height: 12.5rem;
 				object-fit: scale-down;
 			}
 
