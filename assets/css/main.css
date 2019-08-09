@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
 /*
 	Massively by HTML5 UP
@@ -148,10 +149,12 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Merriweather", Georgia, serif;
+		/*font-family: "Merriweather", Georgia, serif;*/
+		font-family: 'Montserrat', sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
-		line-height: 2.375;
+		/*line-height: 2.375;*/
+		line-height: 1.375;
 	}
 
 	a {
@@ -2671,7 +2674,7 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 2.5rem 0;
+			margin: 1.5rem 0;
 			width: 100%;
 		}
 
@@ -4001,6 +4004,7 @@ input, select, textarea {
 			}
 
 				#main > .posts > article > :last-child {
+					margin-top: 1rem;
 					margin-bottom: 0;
 				}
 
@@ -4017,7 +4021,7 @@ input, select, textarea {
 				}
 
 				#main > .posts > article > p {
-					text-align: center;
+					text-align: justify;
 					margin: 0;
 				}
 
@@ -4121,6 +4125,7 @@ input, select, textarea {
 
 				#main > .module > article > :last-child {
 					margin-bottom: 0;
+					line-height: 1.5rem;
 				}
 
 				#main > .module > article:nth-child(5n - 1) {
@@ -4134,6 +4139,12 @@ input, select, textarea {
 				/*#main > .module > article > h4 {
 					font-size: 4rem;
 				}*/
+
+				#main > .module > article > p {
+					font-family: 'Montserrat', sans-serif;
+				}
+
+				
 
 			@media screen and (max-width: 980px) {
 
