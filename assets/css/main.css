@@ -3988,7 +3988,7 @@ input, select, textarea {
 			}
 
 			#main > .posts > * {
-				padding: 4rem;
+				padding: 2.5rem;
 				width: 33.333%;
 			}
 
@@ -4014,6 +4014,11 @@ input, select, textarea {
 
 				#main > .posts > article > h4 {
 					color: #696969;
+				}
+
+				#main > .posts > article > p {
+					text-align: center;
+					margin: 0;
 				}
 
 			@media screen and (max-width: 980px) {
